@@ -377,18 +377,18 @@
         } else {
             historyPage--;
         }
-        document.getElementById("date").style.left = "-100%";
-        document.getElementById("text").style.left = "-100%";
+        document.getElementById("date").style.left = "100%";
+        document.getElementById("text").style.left = "100%";
         setTimeout(function() {
             document.getElementById("blur").style.filter = "blur(3px)";
         }, 100)
         setTimeout(function() {
             document.getElementById("date").style.transition = "0s";
-            document.getElementById("date").style.left = "100%";
+            document.getElementById("date").style.left = "-100%";
             document.getElementById("date").textContent = historyDates[historyPage];
             document.getElementById("text").textContent = historyTexts[historyPage];
             document.getElementById("text").style.transition = "0s";
-            document.getElementById("text").style.left = "100%";
+            document.getElementById("text").style.left = "-100%";
             setTimeout(function() {
                 document.getElementById("date").style.transition = ".5s";
                 document.getElementById("date").style.left = 0;
@@ -406,18 +406,18 @@
         } else {
             historyPage++;
         }
-        document.getElementById("date").style.left = "100%";
-        document.getElementById("text").style.left = "100%";
+        document.getElementById("date").style.left = "-100%";
+        document.getElementById("text").style.left = "-100%";
         setTimeout(function() {
             document.getElementById("blur").style.filter = "blur(3px)";
         }, 100)
         setTimeout(function() {
             document.getElementById("date").style.transition = "0s";
-            document.getElementById("date").style.left = "-100%";
+            document.getElementById("date").style.left = "100%";
             document.getElementById("date").textContent = historyDates[historyPage];
             document.getElementById("text").textContent = historyTexts[historyPage];
             document.getElementById("text").style.transition = "0s";
-            document.getElementById("text").style.left = "-100%";
+            document.getElementById("text").style.left = "100%";
             setTimeout(function() {
                 document.getElementById("date").style.transition = ".5s";
                 document.getElementById("date").style.left = 0;
